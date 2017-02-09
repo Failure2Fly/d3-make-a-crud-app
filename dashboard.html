@@ -19,13 +19,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
-                            <a class="navbar-brand" href="#"><img alt="Brand" src="img/enron.jpg">
-                            </a>
+                            <a class="navbar-brand" href="http://www.cnn.com/2013/07/02/us/enron-fast-facts/"><img alt="Brand" src="img/enron.thumbnail.jpeg" class="img-thumbnail" alt="enron">
+                             </a>
                 </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav">   
                         <li><a href="products.html">Products <span class="sr-only">(current)</span></a></li>
                         <li><a href="users.html">Users <span class="sr-only">(current)</span></a></li>
                         <li><a href="index.html">Log Out <span class="sr-only">(current)</span></a></li>
@@ -64,11 +64,16 @@
             </nav>
         </section>
         <section>
+            <!--<div class"graph">
+                <h1>Graphs and Shit</h1>
+            </div>-->
             <canvas id="myChart" width="400" height="200"></canvas>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js">
+                </script>
+
                 <script>
-                var ctx = document.getElementById("myChart");
-                var myChart = new Chart(ctx, {
+                    var ctx = document.getElementById("myChart");
+                    var myChart = new Chart(ctx, {
                     type: 'bar',
                     data: {
                     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -94,17 +99,17 @@
                     borderWidth: 1
                     }]
                     },
-            options: {
-                scales: {
+                    options: {
+                    scales: {
                     yAxes: [{
-                        ticks: {
-                            beginAtZero:true
+                    ticks: {
+                    beginAtZero:true
                         }
                     }]
-                }
-            }
-        });
-        </script>
+                    }
+                    }
+                    });
+                </script>
         </section>
     </body>
 </html>

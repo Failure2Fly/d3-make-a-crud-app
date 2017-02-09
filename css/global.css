@@ -8,16 +8,33 @@ img {
     margin: 100px 10px 30px 10px;
 
 }
-img {
-    display: block;
-    margin: auto;
-    max-width: 200px;
-    max-height: 200px;
+.col-sm-6 {
+    padding: 30px 30px 50px 30px;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
-.navbar-brand {
-    max-width: 60px;
-    margin: 0px 5px 10px 5px;
+.navbar {
+    padding: 0px 0px 25px 0px;
+}
+.navbar-brand img {
+    width: 50%;
 }
 .elements {
     font-size: 25px;
+}
+.movie{
+    display: inline;
+    margin-left: 8px;
+}
+
+a img {
+    display: none;
+}
+
+a:hover img {
+    display: inline;   
+}
+.movie :first-child {
+    width: 75px;
+    height: 100px;
 }
